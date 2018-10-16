@@ -1,0 +1,124 @@
+nav {
+  /*border: 1px solid blue;  /* For debugging*/
+  background-color: inherit; /*rgb(25, 25, 25);*/
+  position: static;
+}
+
+nav img {
+  padding-left: 2.5rem;
+}
+
+nav a:hover {
+  font-size: 1.5rem;
+}
+
+nav a {
+  transition-property: font-size;
+  transition-duration: 250ms;
+}
+
+.menu-container {
+  justify-content: center;
+}
+
+.menu-container .logo {
+  border: 1px solid blue;  /* For debugging*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu {
+  border: 1px solid red;  /* For debugging */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  z-index: 2;
+}
+
+.links {
+  border: 1px solid blue;  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2.5rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.services,
+.ourWork {
+  margin-left: 1.2rem;
+}
+
+/*--------WORKING NAV---------------*/
+
+nav {
+  border: 1px solid blue;  /* For debugging*/
+  background-color: inherit; /*rgb(25, 25, 25);*/
+  position: static;
+  width: 100%;
+  height: 60px;
+}
+
+nav img {
+  padding-left: 2.5rem;
+}
+
+nav a:hover {
+  font-size: 1.5rem;
+}
+
+nav a {
+  transition-property: font-size;
+  transition-duration: 250ms;
+}
+
+.menu-container {
+  justify-content: center;
+}
+
+.menu {
+  border: 1px solid red;  /* For debugging */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  border: 1px solid blue;  /* For debugging */
+  display: flex;
+  justify-content: center;
+  padding-right: ;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.services,
+.ourWork {
+  margin-left: 1.2rem;
+}
+
+/* Nav html
+
+<nav>
+  <div class='menu-container container'>
+    <div class='menu'>
+      <div class='links'>
+        <div class="whoIam"><a href="#whoIam">Who I Am</a></div>
+        <div class="services"><a href="#services">Services</a></div>
+        <div class="ourWork"><a href="#ourWork">My Work</a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+*/
