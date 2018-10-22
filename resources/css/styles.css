@@ -115,6 +115,12 @@ a:visited {
   max-width: 1366px;
 }
 
+.brand-container,
+.web-container,
+.illustration-container {
+  width: 100%;
+}
+
 /* Navigation */
 
 nav {
@@ -347,7 +353,8 @@ nav {
 }
 
 .block img {
-  width: 100%;
+  max-width: 100%;
+  display: block;
   height: auto;
 }
 
@@ -365,10 +372,6 @@ nav {
     width: 100%;
     height: 350px;
   }
-  .block img {
-    width: auto;
-    height: 100%;
-  }
   .mobile.about-me {
     display: flex;
     justify-content: center;
@@ -376,9 +379,6 @@ nav {
   }
   .desktop.about-me {
     display: none;
-  }
-  a {
-    text-decoration: none;
   }
 }
 
@@ -417,7 +417,7 @@ nav {
 .kimosabean-block,
 .bristle-block {
   /*border: 1px solid blue;  /* For debugging */
-  width: 674.5px;
+  width: 49.37%; /*674.5px;*/
   height: 500.25px;
 }
 
@@ -431,6 +431,13 @@ nav {
 .bristle-pic {
   /*border: 1px solid blue;  /* For debugging */
   z-index: 1;
+}
+
+.kimosabean-pic img,
+.bristle-pic img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 #content {
@@ -469,11 +476,11 @@ nav {
     width: auto;
     height: auto;
   }
-  .kimosabean-block img,
+  /*.kimosabean-block img,
   .bristle-block img {
     width: 100%;
     height: 100%;
-  }
+  }*/
   #content {
     display: none;
   }
@@ -511,13 +518,13 @@ nav {
 
 .web-container {
   /*border: 1px solid blue;  /* For debugging*/
+
 }
 
 .web-grid {
   /*border: 1px solid red;  /* For debugging*/
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .web-grid .block {
@@ -530,7 +537,7 @@ nav {
 .web-one.block,
 .web-two.block,
 .web-three.block {
-  width: 100%; /*449.6px;*/
+  width: 32.91%; /*449.6px;*/
   height: auto;
   margin: 2px;
 }
@@ -557,7 +564,6 @@ nav {
 .image-container {
   overflow: hidden;
 }
-
 
 
 /* Mobile Style */
@@ -645,7 +651,15 @@ nav {
 .illustration-one.block,
 .illustration-two.block,
 .illustration-three.block {
-  width: 32.91%; /*449.6px;*/
+  width: 33.33%; /*449.6px;*/
+  height: auto;
+}
+
+.coyote img,
+.gorilla img,
+.tag-boy img {
+  max-width: 100%;
+  display: block;
   height: auto;
 }
 
@@ -658,12 +672,12 @@ nav {
     width: auto;
     height: auto;
   }
-  .illustration-one .coyote img,
+  /*.illustration-one .coyote img,
   .illustration-two .gorilla img,
   .illustration-three .tag-boy img {
     width: 100%;
     height: 100%;
-  }
+  }*/
 }
 
 /* Tablet Style */
@@ -672,12 +686,12 @@ nav {
     width: auto;
     height: auto;
   }
-  .illustration-one .coyote img,
+  /*.illustration-one .coyote img,
   .illustration-two .gorilla img,
   .illustration-three .tag-boy img {
     width: 100%;
     height: 100%;
-  }
+  }*/
 }
 
 /* Contact Section */
