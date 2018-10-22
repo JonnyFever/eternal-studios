@@ -8,6 +8,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <body>
 
     <header>
@@ -24,13 +25,13 @@
                 <a href="index.html"><img src="./resources/images/nav-logo.png"></a></div>
             </div>
               <div id="nav-links">
-                <a href="#graphic">Graphic Design</a>
+                <a href="#brand">Graphic Design</a>
                 <a href="#web">Web Design</a>
                 <a href="#illustration">Illustration</a>
                 <a href="#contact">Contact</a>
               </div>
             <div class="dropdown-foot flex">
-              <a href="https://www.linkedin.com/in/jonathan-leonard-8786967a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/jonathan-leonard-8786967a/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
               <a href="https://www.instagram.com/jon.nathan.l/" target="_blank"><span class="fab fa-instagram"></span></a>
             </div>
           </div>
@@ -59,15 +60,24 @@
               <p>Jonathan Leonard<br>Freelancer<br>Artist<br>Thinker</p>
           </div>
           <div class="about-me block two">
-              <img src="./resources/images/headshot-1.jpg">
+              <img src="./resources/images/headshot-1.jpg" alt="A headshot of my handsome face">
           </div>
-          <div class="about-me block three">
-              <img src="./resources/images/headshot.jpg">
-          </div>
-          <div class="about-me block four">
+          <!-- Mobile -->
+          <div class="mobile about-me block four">
               <h1>What I Do</h1>
               <p>―</p>
-              <p><i class="fa fa-pencil-ruler fa-sm"></i> Design<br>
+              <p><i class="fa fa-pencil-ruler fa-sm"></i> Branding<br>
+                <i class="fa fa-laptop-code fa-sm"></i> Website creation<br>
+                <i class="fa fa-paint-brush fa-sm"></i> Illustration</p>
+          </div>
+          <!-- Mobile End -->
+          <div class="about-me block three">
+              <img src="./resources/images/headshot.jpg" alt="Another headshot of my handsome face but with scribbles">
+          </div>
+          <div class="desktop about-me block four">
+              <h1>What I Do</h1>
+              <p>―</p>
+              <p><i class="fa fa-pencil-ruler fa-sm"></i> Branding<br>
                 <i class="fa fa-laptop-code fa-sm"></i> Website creation<br>
                 <i class="fa fa-paint-brush fa-sm"></i> Illustration</p>
           </div>
@@ -75,15 +85,15 @@
       </div>
 
       <!-- Graphic Design Heading -->
-      <div id="graphic" class="section-heading graphic">
+      <div id="brand" class="section-heading brand">
         <div class="heading">
-          <span>Graphic Design</span>
+          <span>Branding</span>
         </div>
       </div>
 
       <!-- Graphic Design -->
-      <div class="graphic-container">
-        <div class="graphic-grid">
+      <div class="brand-container">
+        <div class="brand-grid">
           <div class="kimosabean-block block">
               <div class="kimosabean-pic" id="kp">
                 <img src="./resources/images/kimosabean.jpg">
@@ -113,7 +123,7 @@
         <!-- Website Design Grid -->
         <div class="web-container">
           <div class="web-grid">
-            <a href="https://jonnyfever.github.io/ColmarAcademy/#online" target="_blank">
+            <a href="https://jonnyfever.github.io/ColmarAcademy/" target="_blank">
               <div class="web-one block">
               <div class="image-container">
                 <img src="./resources/images/colmar.png">
@@ -131,17 +141,18 @@
               </div>
               <div class="web-content" id="web-content">
                 <h1><span class="title1">Jumpstart</span></h1>
-                <p>Jumpstart was created using Bootstrap.</p>
+                <p>A website created using Bootstrap.</p>
               </div>
             </div>
           </a>
-          <a href="https://jonnyfever.github.io/ColmarAcademy/#online" target="_blank">
+          <a href="https://jonnyfever.github.io/teacozy/" target="_blank">
             <div class="web-three block">
               <div class="image-container">
-                <img src="./resources/images/.jpg">
+                <img src="./resources/images/teacozy.png">
               </div>
               <div class="web-content" id="web-content">
                 <h1><span class="title1">Tea Cozy</span></h1>
+                <p>A fictional site for the fictional tea drinker.</p>
               </div>
             </div>
           </a>
@@ -163,7 +174,7 @@
                   <img src="./resources/images/coyote.png">
                 </div>
             </div>
-            <div class="illustration-one block">
+            <div class="illustration-two block">
                 <div class="gorilla">
                   <img src="./resources/images/gorilla.png">
                 </div>
@@ -178,9 +189,11 @@
 
         <!-- Contact -->
         <div id="contact" class="section-heading contact">
-          <div class="contact-content">
+          <div class="contact-heading">
             <h1>Contact</h1>
-            <p>For enquiries related to any of the above fields, don't hesitate to send me an email at <strong>romans1sixteen@ymail.com</strong>.<br>
+          </div>
+          <div class="contact-content">
+            <p>For enquiries related to any of the above fields, don't hesitate to send me an email at <strong>jonathan@eternalstudios.co.za</strong>.<br>
             Furthermore, feel free to check me out on <a href="https://www.linkedin.com/in/jonathan-leonard-8786967a/" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/jon.nathan.l/" target="_blank">Instagram</a>!</p>
           </div>
         </div>
