@@ -86,15 +86,15 @@ a:visited {
 
 .section-heading {
   width: 100%;
-  height: 500.25px;
+  height: /*36.62%;*/ 500.25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .block {
-  width: 674.5px;
-  height: 500.25px;
+  width: 49.37%; /*674.5px*/
+  height: 36.62%; /*500.25px*/
 }
 
 .content {
@@ -112,6 +112,7 @@ a:visited {
 .site {
   position: relative;
   top: 3.7rem;
+  max-width: 1366px;
 }
 
 /* Navigation */
@@ -170,7 +171,7 @@ nav {
 
 .company-name {
   /*border: 1px solid blue;  /* For debugging*/
-  width: 280px;
+  width: 280px; /*20.49%;*/
   height: 100%;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -181,7 +182,7 @@ nav {
 }
 
 .burger, .logo-container {
-  width: 100px;
+  width: 100px; /*07.32%;*/
 }
 
 .company-name {
@@ -250,8 +251,8 @@ nav {
   background-color: rgb(25, 25, 25);
   background-image: url("../images/dropdown-background.png");
   background-size: cover;
-  min-width: 160px;
-  width: 200px;
+  min-width: 11.71%; /*160px*/
+  width: 14.64%; /*200px*/
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   top: 3.7rem;
@@ -376,10 +377,13 @@ nav {
   .desktop.about-me {
     display: none;
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 
-/* Graphic */
+/* Branding */
 
 .section-heading.brand {
   /*border: 1px solid red;  /* For debugging */
@@ -505,15 +509,19 @@ nav {
 
 /* Web Design Grid */
 
-.web-grid {
+.web-container {
   /*border: 1px solid blue;  /* For debugging*/
+}
+
+.web-grid {
+  /*border: 1px solid red;  /* For debugging*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .web-grid .block {
-  /*border: 1px solid red;  /* For debugging*/
+  /*border: 1px solid purple;  /* For debugging*/
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -522,7 +530,7 @@ nav {
 .web-one.block,
 .web-two.block,
 .web-three.block {
-  width: 449.6px;
+  width: 100%; /*449.6px;*/
   height: auto;
   margin: 2px;
 }
@@ -624,18 +632,20 @@ nav {
 /* Illustration Grid */
 
 .illustration-container {
-
+  width: 100%;
 }
 
 .illustration-grid {
-  /*border: 1px solid blue;  /* For debugging */
+  /*border: 1px solid purple;  /* For debugging */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.illustration-grid .block {
-  width: 449.6px;
+.illustration-one.block,
+.illustration-two.block,
+.illustration-three.block {
+  width: 32.91%; /*449.6px;*/
   height: auto;
 }
 
